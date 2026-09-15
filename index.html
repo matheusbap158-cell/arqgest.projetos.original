@@ -3,24 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="D'Arco Arquitetura — estúdio em Lavras, MG. Residências e espaços comerciais, do primeiro esboço à última demão de tinta.">
-<meta name="theme-color" content="#12100E">
-<title>D'Arco Arquitetura — Projetos que continuam fazendo sentido depois de prontos</title>
+<meta name="description" content="arqGest Arquitetura — estúdio em Lavras, MG. Residências e espaços comerciais, do primeiro esboço à última demão de tinta.">
+<meta name="theme-color" content="#000000">
+<title>arqGest Arquitetura — Projetos que continuam fazendo sentido depois de prontos</title>
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:title" content="D'Arco Arquitetura — Lavras, MG">
+<meta property="og:title" content="arqGest Arquitetura — Lavras, MG">
 <meta property="og:description" content="Residências e espaços comerciais que unem identidade, funcionalidade e execução cuidada.">
 <meta property="og:image" content="Fotos/9.png">
 
-<!-- <link rel="icon" href="..."> — pendente: o PNG do logo não tem transparência. -->
+<link rel="icon" href="Logo/arqgest-simbolo.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet">
 
 <style>
 /* ==========================================================================
-   D'ARCO ARQUITETURA — Landing page
+   ARQGEST ARQUITETURA — Landing page
    Tokens, escala e componentes conforme "Design system arquitetura · MD".
    Sem bibliotecas. Único recurso externo: as duas famílias do Google Fonts
    nomeadas pelo design system (Cormorant Garamond + Manrope).
@@ -28,18 +28,18 @@
 
 :root{
   /* ---------- Bases ---------- */
-  --base-900:#12100E;
-  --base-800:#1C1A17;
-  --base-700:#262320;
+  --base-900:#000000;
+  --base-800:#1A1A1A;
+  --base-700:#242424;
   --sand-050:#F4F1EC;
   --sand-100:#E8E2D8;
   --sand-200:#D6CEC1;
 
   /* ---------- Acento ---------- */
-  --gold-400:#DFC38C;
-  --gold-500:#C4A265;
-  --gold-700:#96793F;
-  --bronze-500:#A9714B;
+  --gold-400:#8FB3DA;
+  --gold-500:#5C8CC0;
+  --gold-700:#3E6699;
+  --bronze-500:#4A76A8;
   --stone-500:#6E6A63;
 
   /* ---------- Texto sobre escuro ---------- */
@@ -58,7 +58,7 @@
   /* ---------- Sombras ---------- */
   --shadow-sm:0 2px 8px rgba(0,0,0,.25);
   --shadow-lg:0 24px 60px rgba(0,0,0,.45);
-  --shadow-glow:0 8px 24px rgba(196,162,101,.20);
+  --shadow-glow:0 8px 24px rgba(92,140,192,.20);
 
   /* ---------- Espaço (base 8) ---------- */
   --s1:4px; --s2:8px; --s3:16px; --s4:24px; --s5:32px;
@@ -196,11 +196,11 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
 .btn--primary:hover{background:var(--gold-400);transform:translateY(-1px);box-shadow:var(--shadow-glow)}
 .btn--primary:active{background:var(--gold-700);transform:none;box-shadow:none}
 
-.btn--outline{background:transparent;color:var(--text-on-dark);border:1px solid rgba(196,162,101,.45);padding:13px 27px}
+.btn--outline{background:transparent;color:var(--text-on-dark);border:1px solid rgba(92,140,192,.45);padding:13px 27px}
 @media (min-width:768px){ .btn--outline{padding:15px 31px} }
-.btn--outline:hover{border-color:var(--gold-500);background:rgba(196,162,101,.08)}
-.on-light .btn--outline{color:var(--text-on-light);border-color:rgba(150,121,63,.5)}
-.on-light .btn--outline:hover{border-color:var(--gold-700);background:rgba(150,121,63,.07)}
+.btn--outline:hover{border-color:var(--gold-500);background:rgba(92,140,192,.08)}
+.on-light .btn--outline{color:var(--text-on-light);border-color:rgba(62,102,153,.5)}
+.on-light .btn--outline:hover{border-color:var(--gold-700);background:rgba(62,102,153,.07)}
 
 .btn--pill{border-radius:var(--r-full)}
 
@@ -208,11 +208,11 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
   display:inline-block;padding:12px 0;
   font-size:15px;font-weight:600;letter-spacing:.02em;
   color:var(--gold-500);
-  border-bottom:1px solid rgba(196,162,101,.35);
+  border-bottom:1px solid rgba(92,140,192,.35);
   transition:color .2s ease-out,border-color .2s ease-out;
 }
 .btn-ghost:hover{color:var(--gold-400);border-bottom-color:var(--gold-500)}
-.on-light .btn-ghost{color:var(--gold-700);border-bottom-color:rgba(150,121,63,.4)}
+.on-light .btn-ghost{color:var(--gold-700);border-bottom-color:rgba(62,102,153,.4)}
 .on-light .btn-ghost:hover{color:var(--bronze-500);border-bottom-color:var(--gold-700)}
 
 /* ============================== HEADER ============================== */
@@ -225,11 +225,11 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
 }
 .header::before{
   content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(to bottom,rgba(18,16,14,.72),rgba(18,16,14,0));
+  background:linear-gradient(to bottom,rgba(0,0,0,.72),rgba(0,0,0,0));
   transition:opacity .3s ease-out;
 }
 .header.is-stuck{
-  background:rgba(18,16,14,.94);
+  background:rgba(0,0,0,.94);
   border-bottom-color:var(--base-700);
   -webkit-backdrop-filter:blur(12px);
   backdrop-filter:blur(12px);
@@ -238,26 +238,12 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
 
 .header .wrap{display:flex;align-items:center;justify-content:space-between;gap:var(--s4)}
 
-/* Lockup tipográfico provisório.
-   O arquivo Logo/Editedimage_1788170363921.png não é utilizável: tem 0% de
-   pixels transparentes — é um logo branco achatado sobre o quadriculado que
-   representa transparência. Assim que houver um PNG com alpha real ou um SVG,
-   troque este bloco por <img src="..." alt="D'Arco Arquitetura"> e apague o CSS. */
-.brand{display:flex;flex-direction:column;justify-content:center;gap:3px;min-height:44px}
-.brand__name{
-  font-family:var(--font-display);
-  font-size:25px;line-height:1;letter-spacing:.005em;
-  color:var(--text-on-dark);
-}
-.brand__sub{
-  font-size:9px;font-weight:600;line-height:1;
-  letter-spacing:.30em;text-transform:uppercase;
-  color:var(--text-on-dark-2);
-}
-@media (min-width:768px){
-  .brand__name{font-size:28px}
-  .brand__sub{font-size:10px}
-}
+/* Marca: cabeçalho usa só o símbolo (compacto, legível na barra fixa);
+   o lockup completo (símbolo + "arqGest" + "Projetos e Construção") aparece
+   maior no rodapé, onde há espaço vertical para a marca inteira. */
+.brand{display:flex;align-items:center;min-height:44px}
+.brand__logo{height:36px;width:auto}
+@media (min-width:768px){ .brand__logo{height:40px} }
 
 .nav{display:none}
 @media (min-width:1024px){
@@ -362,7 +348,7 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
    o hero enquanto o vídeo baixa — sem ele o topo fica preto no celular. */
 .hero__media{
   position:absolute;inset:0;z-index:0;
-  background-color:#12100E;
+  background-color:#000000;
   background-image:url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAASACADASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQGBQL/xAAsEAACAQIFAwMCBwAAAAAAAAABAgMEEQAFEiExExRBBiIyB7EVUWFxkdHh/8QAFwEBAQEBAAAAAAAAAAAAAAAAAgQAAf/EABsRAAMAAwEBAAAAAAAAAAAAAAABAgMSMWER/9oADAMBAAIRAxEAPwCZh9Ry1bU0eW0g6rkCQSoWCi9rggjjz+4xt09dXHNUy/ustR5AvT6kLqzsTYAKXv8A7iSyUCiIeKuMLLfhLluDax2O48nFLUp+MZ/HT1lXNUhliWSedemdOon4qBYAOfP9AXeXbwUTjc+jVT6hzGirZaRJ8pmeJeI4pHOu9tNlYkb/AMYYrPqFSZblVE70vdV8hbuIhG8CIBfgtcne1rXuAb6dhiflpoMvz4xwVHb9Ji0U8bE6CWADbcEDfx9sYmd0shMeqspZmG+mMEaPaBvuQfiMaXbZ2tEvoyQBPAoACkG4HH5/ffHVVPLHUh0ldGMe5ViCdzgwYpsmg1qhQ1PO7AFjC3uPPnD2XRpVZPRx1CLMgS4WQahtcDY/pgwYK4J9P//Z");
   background-size:cover;
   background-position:50% 50%;
@@ -392,13 +378,13 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
   width:44px;height:44px;border-radius:var(--r-full);
   border:1px solid rgba(242,239,233,.25);
   color:var(--text-on-dark);
-  background:rgba(18,16,14,.45);
+  background:rgba(0,0,0,.45);
   -webkit-backdrop-filter:blur(6px);
   backdrop-filter:blur(6px);
   transition:border-color .2s ease-out,color .2s ease-out,background-color .2s ease-out;
 }
 @media (min-width:768px){ .hero__toggle{right:24px} }
-.hero__toggle:hover{border-color:var(--gold-500);color:var(--gold-500);background:rgba(18,16,14,.7)}
+.hero__toggle:hover{border-color:var(--gold-500);color:var(--gold-500);background:rgba(0,0,0,.7)}
 .hero__toggle[hidden]{display:none}
 .hero__toggle .ico-play{display:none}
 .hero__toggle[data-paused="true"] .ico-pause{display:none}
@@ -409,8 +395,8 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
 .hero__media::after{
   content:"";position:absolute;inset:0;
   background:
-    linear-gradient(to top,rgba(18,16,14,.96) 0%,rgba(18,16,14,.88) 28%,rgba(18,16,14,.45) 62%,rgba(18,16,14,.28) 100%),
-    linear-gradient(to right,rgba(18,16,14,.92) 0%,rgba(18,16,14,.55) 45%,rgba(18,16,14,.10) 80%);
+    linear-gradient(to top,rgba(0,0,0,.96) 0%,rgba(0,0,0,.88) 28%,rgba(0,0,0,.45) 62%,rgba(0,0,0,.28) 100%),
+    linear-gradient(to right,rgba(0,0,0,.92) 0%,rgba(0,0,0,.55) 45%,rgba(0,0,0,.10) 80%);
 }
 
 .hero__inner{position:relative;z-index:1;width:100%}
@@ -505,7 +491,7 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
 @media (min-width:768px){ .about__figure img{aspect-ratio:5/4} }
 @media (min-width:1024px){ .about__figure img{aspect-ratio:4/5} }
 
-/* Bloco de citação — hairline dourada, sem caixa */
+/* Bloco de citação — hairline na cor de acento, sem caixa */
 .quote{
   margin-top:var(--s6);
   padding-left:var(--s4);
@@ -534,7 +520,7 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
   transition:background-color .25s ease-out,border-color .25s ease-out;
 }
 @media (min-width:768px){ .svc{padding:var(--s5) var(--s5) 34px} }
-.svc:hover{background:var(--base-700);border-color:rgba(196,162,101,.4)}
+.svc:hover{background:var(--base-700);border-color:rgba(92,140,192,.4)}
 .svc__icon{
   width:32px;height:32px;margin-bottom:var(--s4);
   color:var(--gold-700);
@@ -660,7 +646,7 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
 .work:focus-visible .work__img img{transform:scale(1.03)}
 .work__img::after{
   content:"";position:absolute;inset:0;
-  background:linear-gradient(to top,rgba(18,16,14,.92) 0%,rgba(18,16,14,.55) 30%,rgba(18,16,14,0) 62%);
+  background:linear-gradient(to top,rgba(0,0,0,.92) 0%,rgba(0,0,0,.55) 30%,rgba(0,0,0,0) 62%);
 }
 .work__body{
   position:absolute;left:0;right:0;bottom:0;z-index:1;
@@ -750,14 +736,14 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
 @media (min-width:768px){ .footer__grid{grid-template-columns:1.3fr 1fr 1fr} }
 @media (min-width:1024px){ .footer__grid{grid-template-columns:1.6fr 1fr 1fr;gap:var(--s8)} }
 .footer__brand .brand{margin-bottom:var(--s4)}
-.footer__brand .brand__name{font-size:34px}
-.footer__brand .brand__sub{font-size:11px;color:var(--gold-700)}
+.footer__brand .brand__logo{height:84px}
+@media (min-width:768px){ .footer__brand .brand__logo{height:96px} }
 .footer address{font-style:normal;font-size:15px;line-height:1.75}
 .footer address a{
   display:inline-flex;align-items:center;min-height:44px;
   color:var(--text-on-dark-2);
   text-decoration:underline;
-  text-decoration-color:rgba(196,162,101,.35);
+  text-decoration-color:rgba(92,140,192,.35);
   text-decoration-thickness:1px;
   text-underline-offset:4px;
   transition:color .2s ease-out,text-decoration-color .2s ease-out;
@@ -821,12 +807,13 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
      Todos marcados no HTML com o atributo data-ficticio.
        · Barra de números: 180 projetos, 12 cidades  (35+ anos vem da bio
          real do Instagram; 100% já constava no copy)
-       · Nomes/metragens dos 3 projetos, exceto "High Garden", que aparece
-         escrito na fachada dos próprios renders
+       · Nomes/metragens dos 3 projetos do portfólio: os renders atuais
+         (Fotos/4, 6 e 8) não têm nenhum projeto real associado a eles,
+         então os três títulos/metragens são placeholder.
      NÃO fictício: endereço, telefone e Instagram, extraídos de
-     "Info Google Maps.txt" e "Info Instagram.txt".
-     NÃO preenchido: o depoimento — inventar prova social assinada por um
-     cliente é o único item que o copy proíbe explicitamente.
+     "Info Maps.txt" (ficha do Google Maps) e "Instagram/Instagram.txt".
+     Depoimento: substituído por uma avaliação real do Google (Sandra Lima,
+     ver "Info Maps.txt") — não é mais placeholder.
      ===================================================================== -->
 
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
@@ -834,10 +821,8 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
 <!-- ============================ CABEÇALHO ============================ -->
 <header class="header" id="cabecalho">
   <div class="wrap">
-    <!-- PROVISÓRIO: aguardando arquivo de logo com transparência real. -->
-    <a class="brand" href="#inicio" aria-label="D'Arco Arquitetura — ir para o início">
-      <span class="brand__name" aria-hidden="true">D'Arco</span>
-      <span class="brand__sub" aria-hidden="true">Arquitetura</span>
+    <a class="brand" href="#inicio" aria-label="arqGest Arquitetura — ir para o início">
+      <img class="brand__logo" src="Logo/arqgest-simbolo.png" alt="" width="192" height="160">
     </a>
 
     <nav class="nav" aria-label="Navegação principal">
@@ -852,7 +837,7 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
     </nav>
 
     <a class="btn btn--primary btn--pill header-cta"
-       href="https://wa.me/5535999436335?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20D%27Arco%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
+       href="https://wa.me/5535999279396?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20arqGest%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
        target="_blank" rel="noopener">Fale conosco</a>
 
     <button class="burger" type="button" id="burger"
@@ -874,7 +859,7 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
       <li><a href="#contato">Contato</a></li>
     </ul>
     <a class="btn btn--primary btn--pill"
-       href="https://wa.me/5535999436335?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20D%27Arco%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
+       href="https://wa.me/5535999279396?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20arqGest%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
        target="_blank" rel="noopener">Fale conosco</a>
   </nav>
 </div>
@@ -913,7 +898,7 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
         </h1>
 
         <p class="lead reveal">
-          A D'Arco Arquitetura desenha residências e espaços comerciais que unem
+          A arqGest Arquitetura desenha residências e espaços comerciais que unem
           identidade, funcionalidade e execução cuidada — do primeiro esboço à
           última demão de tinta.
         </p>
@@ -921,7 +906,7 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
         <div class="hero__actions reveal">
           <a class="btn btn--primary btn--pill" href="#projetos">Ver projetos</a>
           <a class="btn btn--outline btn--pill"
-             href="https://wa.me/5535999436335?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20conversa%20sobre%20um%20projeto."
+             href="https://wa.me/5535999279396?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20conversa%20sobre%20um%20projeto."
              target="_blank" rel="noopener">Agendar conversa</a>
         </div>
       </div>
@@ -931,7 +916,7 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
   </section>
 
   <!-- ======================= BARRA DE NÚMEROS ======================= -->
-  <section class="stats-band" aria-label="A D'Arco em números">
+  <section class="stats-band" aria-label="A arqGest em números">
     <div class="wrap">
       <dl class="stats" id="numeros">
         <div class="stat">
@@ -969,7 +954,7 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
 
           <div class="measure">
             <p>
-              A D'Arco nasceu em Lavras com um princípio simples: um projeto bom é
+              A arqGest nasceu em Lavras com um princípio simples: um projeto bom é
               aquele que resolve a vida de quem mora ou trabalha ali — antes de
               resolver qualquer tendência.
             </p>
@@ -995,7 +980,7 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
 
         <figure class="about__figure">
           <img src="Fotos/7.png" loading="lazy" decoding="async" width="1080" height="1440"
-               alt="Sala de estar projetada pela D'Arco: sofá em tecido cru, painel ripado de madeira ao fundo, mesa de centro em palhinha e iluminação embutida de luz quente.">
+               alt="Fachada de residência projetada pela arqGest ao entardecer: terraço com pergolado metálico e iluminação embutida, volume superior em tijolo aparente sobre revestimento claro.">
         </figure>
 
       </div>
@@ -1121,7 +1106,7 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
                 <path data-draw pathLength="1" style="--d:.34s" d="M492 330v-26M492 312l-9-8M492 318l9-7"/>
                 <path data-draw pathLength="1" style="--d:.38s" d="M478 300a15 15 0 0 1 28 0 13 13 0 0 1-28 0z"/>
                 <!-- rosa dos ventos -->
-                <g data-fade style="--d:.45s" stroke="#96793F">
+                <g data-fade style="--d:.45s" stroke="#3E6699">
                   <circle cx="536" cy="62" r="17"/>
                   <path d="M536 50v24M530 57l6-9 6 9"/>
                 </g>
@@ -1135,9 +1120,9 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
                 <path data-draw pathLength="1" d="M150 330V206h106"/>
                 <path data-draw pathLength="1" style="--d:.12s" d="M256 206V128h56v90"/>
                 <path data-draw pathLength="1" style="--d:.24s" d="M312 218h118v112"/>
-                <path data-draw pathLength="1" style="--d:.34s" stroke="#96793F" d="M136 214l134-16"/>
-                <path data-draw pathLength="1" style="--d:.40s" stroke="#96793F" d="M246 133l76-9"/>
-                <path data-draw pathLength="1" style="--d:.46s" stroke="#96793F" d="M300 210l148 20"/>
+                <path data-draw pathLength="1" style="--d:.34s" stroke="#3E6699" d="M136 214l134-16"/>
+                <path data-draw pathLength="1" style="--d:.40s" stroke="#3E6699" d="M246 133l76-9"/>
+                <path data-draw pathLength="1" style="--d:.46s" stroke="#3E6699" d="M300 210l148 20"/>
               </g>
 
               <!-- ===== Camada 3 — DESENVOLVIMENTO ===== -->
@@ -1165,14 +1150,14 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
                   <path data-draw pathLength="1" style="--d:.20s" d="M150 220l-12 2M186 216l-12 2M222 212l-12 2M258 208l-12 2"/>
                 </g>
                 <!-- carimbo de aprovação -->
-                <g data-fade style="--d:.3s" stroke="#96793F">
+                <g data-fade style="--d:.3s" stroke="#3E6699">
                   <circle cx="96" cy="104" r="41" stroke-width="1.4"/>
                   <circle cx="96" cy="104" r="34" stroke-width=".8"/>
                   <path d="M66 104h60" stroke-width=".8"/>
-                  <text x="96" y="99" text-anchor="middle" fill="#96793F"
+                  <text x="96" y="99" text-anchor="middle" fill="#3E6699"
                         font-family="Manrope, sans-serif" font-size="10" font-weight="600"
                         letter-spacing="1.2" stroke="none">APROVADO</text>
-                  <text x="96" y="120" text-anchor="middle" fill="#96793F"
+                  <text x="96" y="120" text-anchor="middle" fill="#3E6699"
                         font-family="Manrope, sans-serif" font-size="8" font-weight="600"
                         letter-spacing="1" stroke="none">PREFEITURA</text>
                 </g>
@@ -1180,19 +1165,19 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
 
               <!-- ===== Camada 5 — ENTREGA ===== -->
               <g class="ly" data-layer="5">
-                <g data-fade fill="#C4A265" stroke="none">
+                <g data-fade fill="#5C8CC0" stroke="none">
                   <rect x="349" y="259" width="32" height="70" opacity=".38"/>
                   <rect x="397" y="253" width="28" height="40" opacity=".38"/>
                   <rect x="175" y="239" width="52" height="48" opacity=".38"/>
                 </g>
                 <ellipse data-fade style="--d:.35s" cx="365" cy="300" rx="86" ry="54"
-                         fill="#C4A265" opacity=".13" stroke="none"/>
+                         fill="#5C8CC0" opacity=".13" stroke="none"/>
                 <!-- morador na entrada -->
                 <g data-fade style="--d:.5s" stroke="#1C1A17" stroke-width="1.3">
                   <circle cx="332" cy="296" r="5"/>
                   <path d="M332 301v16M332 317l-6 13M332 317l6 13M325 308h14"/>
                 </g>
-                <path data-draw pathLength="1" style="--d:.55s" stroke="#96793F" stroke-width="1.2"
+                <path data-draw pathLength="1" style="--d:.55s" stroke="#3E6699" stroke-width="1.2"
                       d="M452 292a7 7 0 1 0-13 3l-13 13 4 4 3-3 4 4 4-4-4-4 5-5a7 7 0 0 0 10-8z"/>
               </g>
 
@@ -1200,7 +1185,7 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
           </div>
 
           <p class="plate__strip">
-            <span>D'Arco · Prancha do processo</span>
+            <span>arqGest · Prancha do processo</span>
             <span class="plate__stage" id="plate-stage">01 / 05</span>
           </p>
         </div>
@@ -1257,16 +1242,16 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
             <span class="brk">Projetos que já </span>saíram do papel
           </h2>
         </div>
-        <a class="btn-ghost" href="https://www.instagram.com/darco.arquitetura/"
+        <a class="btn-ghost" href="https://www.instagram.com/arqgest.projetos/"
            target="_blank" rel="noopener">Ver todos os projetos</a>
       </div>
 
       <ul class="work-grid">
         <li>
-          <a class="work" href="https://www.instagram.com/darco.arquitetura/" target="_blank" rel="noopener">
+          <a class="work work--cool" href="https://www.instagram.com/arqgest.projetos/" target="_blank" rel="noopener">
             <span class="work__img">
               <img src="Fotos/8.png" loading="lazy" decoding="async" width="1080" height="1440"
-                   alt="Residência térrea com telhado em duas águas, torre em tijolo aparente e caminho de placas de concreto sobre a grama, fotografada ao pôr do sol.">
+                   alt="Residência com volume superior revestido em madeira, marquise ampla sobre a garagem e fachada em concreto claro, fotografada durante o dia.">
             </span>
             <span class="work__body">
               <span>
@@ -1284,15 +1269,15 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
         </li>
 
         <li>
-          <a class="work work--cool" href="https://www.instagram.com/darco.arquitetura/" target="_blank" rel="noopener">
+          <a class="work" href="https://www.instagram.com/arqgest.projetos/" target="_blank" rel="noopener">
             <span class="work__img">
               <img src="Fotos/4.png" loading="lazy" decoding="async" width="1080" height="1440"
-                   alt="Edifício comercial High Garden visto de baixo: fachada em tijolo claro, brises verticais escuros, grande pano de vidro e jardim suspenso na cobertura.">
+                   alt="Quarto planejado com marcenaria sob medida, nicho iluminado com prateleiras em madeira e painel para TV embutido.">
             </span>
             <span class="work__body">
               <span>
-                <span class="work__title">High Garden</span>
-                <span class="work__meta" data-ficticio="parcial">Centro, Lavras · 1.450 m²</span>
+                <span class="work__title" data-ficticio="sim">Apartamento Cedro</span>
+                <span class="work__meta" data-ficticio="sim">Centro, Lavras · 95 m²</span>
               </span>
               <span class="work__go" aria-hidden="true">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
@@ -1305,15 +1290,15 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
         </li>
 
         <li>
-          <a class="work work--cool" href="https://www.instagram.com/darco.arquitetura/" target="_blank" rel="noopener">
+          <a class="work work--cool" href="https://www.instagram.com/arqgest.projetos/" target="_blank" rel="noopener">
             <span class="work__img">
               <img src="Fotos/6.png" loading="lazy" decoding="async" width="1080" height="1440"
-                   alt="Cozinha integrada à sala de jantar: ilha em pedra clara, mesa de madeira maciça, cadeiras estofadas em tom cru e luminária pendente em latão.">
+                   alt="Residência com fachada em concreto aparente e revestimento em madeira, marquise ampla sobre a garagem, sob céu claro.">
             </span>
             <span class="work__body">
               <span>
-                <span class="work__title" data-ficticio="sim">Apartamento Aurora</span>
-                <span class="work__meta" data-ficticio="sim">Centro, Lavras · 145 m²</span>
+                <span class="work__title" data-ficticio="sim">Residência Aurora</span>
+                <span class="work__meta" data-ficticio="sim">Centro, Lavras · 240 m²</span>
               </span>
               <span class="work__go" aria-hidden="true">
                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
@@ -1333,7 +1318,7 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
     <div class="wrap">
       <div class="why__grid">
         <div class="why__head sec-head" style="margin-bottom:0">
-          <p class="eyebrow">Por que a D'Arco</p>
+          <p class="eyebrow">Por que a arqGest</p>
           <h2 id="diferenciais-titulo">
             <span class="brk">Atenção que não termina </span>na entrega do projeto
           </h2>
@@ -1387,8 +1372,7 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
   </section>
 
   <!-- ============================== DEPOIMENTO ==============================
-       Texto mantido como placeholder de propósito: o copy determina que um
-       depoimento genérico ou inventado quebra a confiança do restante. -->
+       Avaliação real do Google (5,0 · 69 avaliações), extraída de "Info Maps.txt". -->
   <section class="section on-dark" id="depoimento" aria-labelledby="depoimento-titulo">
     <div class="wrap">
       <figure class="voice">
@@ -1401,14 +1385,15 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
         <p class="eyebrow" id="depoimento-titulo">Quem já construiu com a gente</p>
 
         <blockquote style="margin-top:var(--s5)">
-          <span class="tbd">"[Espaço reservado para depoimento real de um cliente da D'Arco —
-          uma frase específica sobre o processo ou o resultado costuma
-          convencer mais do que um elogio genérico.]"</span>
+          "Equipe talentosa e comprometida, superaram minhas expectativas com
+          projetos criativos e acompanhamento de todas as etapas da obra. A
+          execução foi impecável graças à atenção aos detalhes durante a
+          construção, recomendo a todos."
         </blockquote>
 
         <figcaption>
-          <p class="voice__name"><span class="tbd">[Nome do cliente]</span></p>
-          <p class="voice__role"><span class="tbd">[Tipo de projeto — ex: Residência em Lavras, MG]</span></p>
+          <p class="voice__name">Sandra Lima</p>
+          <p class="voice__role">Avaliação no Google · Lavras, MG</p>
         </figcaption>
       </figure>
     </div>
@@ -1425,8 +1410,8 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
           Conte um pouco sobre o terreno e a ideia que você tem em mente.
           A partir daí, marcamos uma conversa sem compromisso.
         </p>
-        <a class="btn btn--primary" href="https://wa.me/5535999436335?text=Ol%C3%A1%21%20Tenho%20um%20terreno%20e%20uma%20ideia%20em%20mente%20e%20gostaria%20de%20conversar%20com%20a%20D%27Arco."
-           target="_blank" rel="noopener">Falar com a D'Arco</a>
+        <a class="btn btn--primary" href="https://wa.me/5535999279396?text=Ol%C3%A1%21%20Tenho%20um%20terreno%20e%20uma%20ideia%20em%20mente%20e%20gostaria%20de%20conversar%20com%20a%20arqGest."
+           target="_blank" rel="noopener">Falar com a arqGest</a>
       </div>
     </div>
   </section>
@@ -1439,15 +1424,13 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
     <div class="footer__grid">
 
       <div class="footer__brand">
-        <!-- PROVISÓRIO: aguardando arquivo de logo com transparência real. -->
         <span class="brand">
-          <span class="brand__name">D'Arco</span>
-          <span class="brand__sub">Arquitetura</span>
+          <img class="brand__logo" src="Logo/arqgest-logo.png" alt="arqGest — Arquitetura, Projetos e Construção" width="1312" height="821">
         </span>
         <address>
           Lavras, MG<br>
-          R. das Peróbas, 21 — Centenário, Lavras, MG, 37203-694<br>
-          <a href="tel:+5535999436335">(35) 99943-6335</a><br>
+          R. Srg. Ozório, 12 — Sl. 03, Centro, Lavras, MG, 37200-032<br>
+          <a href="tel:+5535999279396">(35) 99927-9396</a><br>
           <span class="tbd">[E-mail]</span>
         </address>
       </div>
@@ -1468,17 +1451,17 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
         <h2>Redes sociais</h2>
         <ul>
           <li>
-            <a href="https://www.instagram.com/darco.arquitetura/" target="_blank" rel="noopener">
+            <a href="https://www.instagram.com/arqgest.projetos/" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="3" y="3" width="18" height="18" rx="5"/>
                 <circle cx="12" cy="12" r="4"/><path d="M17.2 6.8h.01"/>
               </svg>
-              @darco.arquitetura
+              @arqgest.projetos
             </a>
           </li>
           <li>
-            <a href="https://wa.me/5535999436335" target="_blank" rel="noopener">
+            <a href="https://wa.me/5535999279396" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M3.5 20.5l1.3-4.6A8.2 8.2 0 1 1 8.2 19z"/>
@@ -1493,7 +1476,7 @@ h4,.h4{font-family:var(--font-body);font-size:20px;font-weight:600;line-height:1
     </div>
 
     <div class="footer__base">
-      <p>© 2026 D'Arco Arquitetura. Todos os direitos reservados.</p>
+      <p>© 2026 arqGest Arquitetura. Todos os direitos reservados.</p>
       <p>Lavras, Minas Gerais</p>
     </div>
   </div>
